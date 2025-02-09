@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+        "name": "Python: FastAPI",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "uvicorn",
+        "cwd": "${workspaceFolder}",
+        "args": [
+            "main:app",
+            "--reload",
+            "--port", //these arg are optional
+            "9099",
+            "--forwarded-allow-ips",
+            "'*'",
+            "--host",
+            "0.0.0.0"
+        ]
+        }
+  ]
+}
